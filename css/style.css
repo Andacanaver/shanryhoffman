@@ -1,0 +1,247 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.headings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background-color: darkgoldenrod;
+    color: #f1f1f1;
+    font-size: 1.7rem;
+}
+
+section {
+    height: 90vh;
+}
+
+/* Header */
+header {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #333;
+}
+
+header div img {
+    height: 100px;
+}
+
+header div .fab {
+    padding-left: 1em;
+    color: #333;
+}
+
+header div .fab:hover {
+    color: darkgoldenrod;
+}
+
+/* Showcase */
+.showcase {
+    width: 100vw;
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 500;
+}
+.showcase::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/showcase.jpg) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.showcase p {
+    position: absolute;
+    top: 58%;
+    left: 35%;
+    font-size: 2rem;
+    color: #f1f1f1;
+    z-index: 999;
+    opacity: 1;
+}
+/* Section */
+
+
+/* Summary */
+.summary {
+    display: grid;
+    grid-template-columns: 20% 2fr 2fr 2fr 1fr 1fr 20%;
+}
+
+.summary-details {
+    grid-column: 1 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.summary-details p {
+    font-size: 1.4rem;
+    padding: 0 10em;
+}
+
+.contact-details {
+    grid-column: 5 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.contact-details ul {
+    font-size: 1.3rem;
+    padding: 0 5em;
+}
+
+.contact-details li {
+    padding: 1em 0;
+}
+
+.contact-details li span {
+    color: darkgoldenrod;
+}
+
+/* Experience */
+.experience {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr 2fr 2fr 2fr 20%;
+}
+
+.experience-content {
+    grid-column: 4 / span 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-content p {
+    font-size: 1.4rem;
+    padding: 0 10em;
+}
+
+.experience-details {
+    grid-column: 1 / span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+}
+
+.experience-details ul {
+    font-size: 1.3rem;
+    padding: 0 5em;
+}
+
+.experience-details li {
+    padding: 1em 0;
+}
+
+.experience-details li span {
+    color: darkgoldenrod;
+}
+
+/* Education */
+.education {
+    height: 65vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.odd {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.even {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.odd h1,
+.even h2 {
+    padding: 1em 0;
+    color: darkgoldenrod;
+}
+
+.odd p,
+.even p {
+    margin: 0 1em;
+}
+
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: darkgoldenrod;
+    color: #f1f1f1;
+}
+
+footer span {
+    color: #333;
+}
+
+footer div:nth-child(1),
+footer div:nth-child(2),
+footer div:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #333;
+}
+
+.footnote {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    color: #f1f1f1;
+    font-size: 0.8rem;
+}
